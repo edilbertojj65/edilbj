@@ -1,3 +1,168 @@
+
+head {
+  background: rgb(206, 23, 23);
+}
+
 body {
-    background: blue;
+    background: rgb(184, 209, 208);
   }
+
+
+  .outer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content :center;
+    top: 930px;
+    left: 2000px;
+    text-align :justify;
+  }
+
+  img[alt="Kitty 5"] {
+    position: absolute;
+    z-index: 3;
+    top: 120px;
+    left: 260px;
+    height: 400px;
+    width: 300px;
+  }
+
+  .font_3 {
+    font: var(--font_3);
+    color: rgb(var(--color_14));
+    margin-left:700px;
+    font-size:80px ;
+    font-weight:bold ;
+    top: 980px;
+    left: 2000px; 
+}
+
+.font_4 {
+  font: var(--font_4);
+  color: rgb(var(--color_14));
+  margin-left: 700px;
+  top: 900px;
+}
+
+ p {
+   font-size: medium;
+   text-align: justify;
+   top: 230px;
+   left: 250px;
+ }
+
+ .navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  top : 100;
+  list-style: none;
+  margin: 0; 
+  background: rgb(29, 75, 88);
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  
+}
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+font_4  .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 100%;
+}
+
+
+.flex-container {
+  /* We first create a flex layout context */
+  display :inline-flex; 
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: column wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+  border-top: 1px solid rgba(255, 255, 255,0.3); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  background: rgb(150, 205, 218);
+}
+
+.flex-item {
+  background:  rgb(150, 205, 218);
+  padding: 35px;
+  width: 300px;
+  height: 50px;
+  margin-top: 1px;
+  line-height: 100px;
+  color: red;
+  font-weight: bold;
+  font-size: 16px; 
+  text-align: justify;
+}
+
+.button {
+  background-color: #2690ce; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 100%;}
+.button2 {border-radius: 100%;}
+.button3 {border-radius: 100%;}
