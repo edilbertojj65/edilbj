@@ -5,6 +5,7 @@ head {
 
 body {
     background: rgb(184, 209, 208);
+    
   }
 
 
@@ -24,6 +25,7 @@ body {
     text-align :justify;
   }
 
+  
   img[alt="Kitty 5"] {
     position: absolute;
     z-index: 3;
@@ -31,7 +33,9 @@ body {
     left: 260px;
     height: 400px;
     width: 300px;
+   
   }
+
 
   .font_3 {
     font: var(--font_3);
